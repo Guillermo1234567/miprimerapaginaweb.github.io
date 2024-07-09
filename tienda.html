@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda virtual</title>
+    <link rel="stylesheet" href="css/estilostienda.css">
+</head>
+<body>
+    <header>
+        <h1>Tienda virtual</h1> <!--titulo de la tienda-->
+    </header>
+    <div class="contenedor">
+        <div class="productos">
+            <!--Primer producto-->
+            <div class="producto">
+                <img src="css/img/11031489-2-202303151745-Media-dcr800Wx800H.jpeg" alt="Inodoro"> <!--Imagen del primer producto-->
+                <h3>INODORO ONE PIECE OLIMPIA BLANCO 4L / 6L - ARO ELONGADO</h3><!--Nombre del producto-->
+                <p>Precio: s/400</p><!--Precio del primer producto-->
+                <button onclick="addtoCarrito(`INODORO ONE PIECE OLIMPIA BLANCO 4L / 6L - ARO ELONGADO`,400)">Agregar al carrito </button><!--Boton para agregar al carrito-->
+            </div>
+            <!--Segundo producto-->
+            <div class="producto">
+                <img src="css/img/11036377-2-202303151745-Media-dcr800Wx800H.jpeg" alt="Caño">
+                <h3></h3>
+                <p>Precio: s/350</p>
+                <button onclick="addtoCarrito(`GRIFERÍA MONOCOMANDO URBAN BAJA PARA LAVATORIO NEGRO`,350)">Agregar al carrito</button>
+            </div>
+            <!--Tercer producto-->
+            <div class="producto">
+                <img src="css/img/images.jpeg" alt="ducha">
+                <h3>CABEZAL DE DUCHA DE GRAN CAUDAL PARA TODO USO</h3>
+                <p>Precio: s/120</p>
+                <button onclick="addtoCarrito(`CABEZAL DE DUCHA DE GRAN CAUDAL PARA TODO USO`,120)">Agregar al carrito</button>
+            </div>
+        </div>
+            <div class="carrito">
+                <h2>Carrito de compras</h2><!--Titulo de la sección del carrito-->
+                <ul id="car-list"><!--Espacio donde se agregan los productos-->
+
+
+                </ul>
+                <p>Total: s/<span id="car-total">0</span></p><!--Total de compra-->
+                <button onclick="compra()">Realizar compra</button><!--Boton oara realizar la compra-->
+            </div>
+    </div>
+    <script src="js/logica.js"></script><!--Vincular el archivo javascript-->
+</body>
+</html>
